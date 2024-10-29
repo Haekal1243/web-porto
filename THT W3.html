@@ -4,99 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Pribadi</title>
-    <style>
-      
-
-      body {
-            font-family: Arial, sans-serif; 
-            margin: 20px;
-            text-align: center; 
-        }
-
-        nav {
-            margin: 20px 0; 
-        }
-
-        nav a {
-            margin: 0 15px; 
-            text-decoration: none; 
-            color: rgb(194, 13, 13); 
-            font-weight: bold;
-        }
-
-        
-        
-        h1::before {
-            content: "👋 ";
-            font-size: 1.5em;
-        }
-
-      
-       
-        body {
-            margin: 20px;
-            padding: 10px;
-            border: 1px solid rgb(0, 0, 0);
-        }
-
-        img {
-            margin: 20px;
-            padding: 5px;
-            border: 3px solid grey;
-        }
-
-        input[type="button"] {
-            background-color: rgb(20, 196, 157);
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        table, th, td {
-            border: 1px solid rgb(0, 0, 0);
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: rgb(230, 255, 3);
-        }
-
-    
-        .perkenalan {
-           
-            background-color: rgb(235, 0, 0);
-            color: rgb(3, 3, 3);
-        } 
-
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
-    <div align="center">
-        <h1>Portofolio About Me</h1>
-        <a><img src="foto profile.png" width="250" height="350" alt="Logo Manchester United"></a>
-        <nav>
-            <a href="http://127.0.0.1:5501/THT%20W3.html" target="_blank">Profile</a>
-            <a href="https://www.tiktok.com/@ini_ekal" target="_blank">Social Media</a>
-            <a href="#">Setting</a>
-        </nav>
-    </div>
-    <hr/>
 
-    <div align="center">
-        <div class="perkenalan">
-        <h2><span>Introducing</span></h2>
-    </div>  
-        <p>Halo, nama saya <b>Haekal Putra Alharis</b>, dan saya merupakan mahasiswa Ilmu Komputer di Universitas Pertamina, angkatan 2022. Saya memiliki minat yang besar dalam dunia programming. Sejak saya tertarik di dalam dunia programming, saya semakin mendalami berbagai bahasa pemrograman dan di kampus sendiri saya sudah belajar menggunakan bahasa pemrograman seperti <em>C++, Java, Python, dan HTML</em>.
-            Saya juga aktif dalam mengikuti organisasi di lingkungan baik kampus maupun di lingkungan program studi. Alasan saya menekuni dunia programming adalah karena semakin majunya dunia teknologi, sehingga diperlukan skill untuk menghadapi kemajuan teknologi di masa mendatang. Selain itu saya memiliki hobi untuk mendengarkan musik. Lagu favorite saya "Destiny - NEFFEX"
-        </p>
+    
+       <div class="navbar">
+        
+        <nav>
+            <ul>
+            <li><a href="http://127.0.0.1:5501/THT%20W3.html" target="_blank">Profile</a></li>
+            <li><a href="https://www.tiktok.com/@ini_ekal" target="_blank">Social Media</a></li>
+           <li><a href="#">Setting</a></li>
+            </ul>
+        </nav>
+        
     </div>
+    <header>
+
+        <h1>Portofolio About Me</h1>
+    </header>
+    <a><img src="foto profile.png" width="250" height="350" alt="Logo Manchester United"></a>
+    <div align="center">
+        <div class="main-content">
+            <div>
+                <div class="perkenalan">
+                    <h2><span>Introducing</span></h2>
+                </div>
+                <p>Halo, nama saya <b>Haekal Putra Alharis</b>, dan saya merupakan mahasiswa Ilmu Komputer di Universitas Pertamina, angkatan 2022. Saya memiliki minat yang besar dalam dunia programming. Sejak saya tertarik di dalam dunia programming, saya semakin mendalami berbagai bahasa pemrograman dan di kampus sendiri saya sudah belajar menggunakan bahasa pemrograman seperti <em>C++, Java, Python, dan HTML</em>.
+                    Saya juga aktif dalam mengikuti organisasi di lingkungan baik kampus maupun di lingkungan program studi. Alasan saya menekuni dunia programming adalah karena semakin majunya dunia teknologi, sehingga diperlukan skill untuk menghadapi kemajuan teknologi di masa mendatang. Selain itu saya memiliki hobi untuk mendengarkan musik. Lagu favorite saya "Destiny - NEFFEX"
+            </div>
 <br/>
     <div align="justify">
         <h3>Data Diri</h3>
@@ -162,17 +99,33 @@
         </div>
 
         <br/>
-
-        <div>
-            <h3><b>Media Sosial Saya</b></h3>
-            <ul>
-                <li><b>Instagram:</b> <a href="https://www.instagram.com/haptraalharis_/" target="_blank">@haptraalharis_</a></li>
-                <li><b>Handphone:</b> 0881023766482</li>
-                <li><b>TikTok:</b> <a href="https://www.tiktok.com/@ini_ekal" target="_blank">@ini_ekal</a></li>
-            </ul>
-        </div>
-    </div>
-
+        <section>
+            <div class="social-media">
+                <h3>Media Sosial Saya</h3>
+                <div class="grid-container">
+                    <div class="grid-item Instagram">
+                        <a href="https://www.instagram.com/haptraalharis_/" target="_blank"
+                             class="social-link">
+                            <img src="instagram.jpg" class="logo_instagram" alt="Instagram Logo"> @haptraalharis_</a>
+                   
+                    </div>
+                    
+                    <div class="grid-item Tiktok">
+                        <a href="https://www.tiktok.com/@ini_ekal" target="_blank" 
+                        class="social-link">
+                        <img src="tiktok.jpg" class="logo_tiktok" alt="tiktok Logo">@ini_ekal</a>
+                    </div>
+                    <div class="grid-item Handphone"> 
+                        <a href=" " target="_blank"  class="social-link">
+                            <img src="call.jpg" class="call_logo" alt=" Logo call">
+                            0813232334
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     <br/>
     <div align="justify">
         <h3>Riwayat Sekolah</h3>
@@ -208,9 +161,14 @@
     <br/>
 
     <footer>
-        <p>&copy; 2024 Haekal Putra Alharis. Untuk melihat proyek-proyek yang telah dibuat, kunjungi 
-            <a href="https://github.com/Haekal1243/web-porto" target="_blank">Project Saya</a>
-        </p>
+
+        <div class="footer_container">
+            <div class="footer-item info">
+                <p> &copy; 2024 Haekal Putra Alharis. Untuk melihat proyek-proyek yang telah dibuat, kunjungi 
+                    <a href="https://github.com/Haekal1243/web-porto" target="_blank">Project Saya</a>
+                </p>
+            </div>
+        </div>
     </footer>
 
 </body>
