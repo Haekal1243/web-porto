@@ -1,0 +1,27 @@
+<div align="center">
+    <h2>Feedback</h2>
+    <div class="form-container">
+        <form id="Form" onsubmit="return false;">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" name="nama" id="nama">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" >
+            </div>
+            <div class="form-group">
+                <label for="nomor_handphone">Nomor Handphone:</label>
+                <input type="tel" name="nomor_handphone" id="nomor_handphone" >
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat:</label>
+                <textarea name="alamat" id="alamat"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pesan">Pesan:</label>
+                <textarea name="pesan" id="pesan" ></textarea>
+            </div>
+            <input type="button" value="Kirim" onclick="this.form.reset()">
+        </form>
+    </div>
